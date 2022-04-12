@@ -54,10 +54,10 @@ plugins: [date_range_picker]
           <p class="text-dark font-weight-medium pt-4 mb-2">Social Profile</p>
           <p class="pb-3 social-button">
             {% for social in site.data.profile.socials %}
-          -->
               {% if social.link != "" %}
                 <a href="{{social.link}}" class="mb-1 btn btn-outline {{social.class}} rounded-circle">
                   <i class="mdi {{social.icon}}"></i>
+                            -->
                 </a>
               {% endif %}
             {% endfor %}
