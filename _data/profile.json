@@ -1,0 +1,49 @@
+{
+    "name": "Lee",
+    "image": "assets/img/user/pngegg.png",
+    "email": "rhdlektm12@gmail.com",
+    "phone": "+82 10 1234 4567",
+    "birth": "Jan 1, 2001",
+    "resumes": [
+        {
+            "label": "RESUME",
+            "link": "assets/resume/my-resume.txt"
+        },
+        {
+            "label": "PORTFOLIO",
+            "link": "https://swmaestro.org/sw/cmmn/file/fileDown.do?atchFileId=a269afb2417d46ff9a2167942b728001&fileSn=3"
+        }
+    ],
+    "socials": [
+        {
+            "name": "twitter",
+            "icon": "mdi-twitter",
+            "class": "btn-twitter",
+            "link": ""
+        },
+        {
+            "name": "linkedin",
+            "icon": "mdi-linkedin",
+            "class": "btn-linkedin",
+            "link": ""
+        },
+        {
+            "name": "facebook",
+            "class": "btn-facebook",
+            "icon": "mdi-facebook",
+            "link": ""
+        },
+        {
+            "name": "youtube",
+            "icon": "mdi-youtube",
+            "class": "btn-youtube",
+            "link": "https://www.youtube.com/channel/UCLaPIscAkcngYMq6IAT6RDw"
+        },
+        {
+            "name": "skype",
+            "icon": "mdi-skype",
+            "class": "btn-skype",
+            "link": ""
+        }
+    ]
+}

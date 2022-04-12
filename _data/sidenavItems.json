@@ -1,0 +1,33 @@
+[
+  {
+    "name": "dashboard",
+    "label": "Dashboard",
+    "iconClass": "mdi mdi-view-dashboard-outline",
+    "child": [
+      {
+        "name": "covid-analysis",
+        "label": "COVID19",
+        "link": "covid-analysis.html",
+        "tags": "users, charts, notifications, maps"
+      },
+      {
+        "name": "index",
+        "label": "Ecommerce",
+        "link": "index.html",
+        "tags": "ecommerce, charts, todos, maps, tabs, tables"
+      },
+      {
+        "name": "analytics",
+        "label": "Analytics",
+        "link": "analytics.html",
+        "tags": "users, charts, notifications, maps"
+      },
+      {
+        "name": "test",
+        "label": "Test",
+        "link": "test.html",
+        "tags": "users, charts, notifications, maps"
+      }
+    ]
+  }
+]

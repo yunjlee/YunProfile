@@ -1,0 +1,30 @@
+---
+layout: default
+title: "My Project - Dashboard Template"
+
+parent: ""
+sub_parent: ""
+activePage: ""
+plugins: []
+---
+<div class="card card-default">
+  <div class="card-header card-header-border-bottom">
+    <h2>My Project</h2>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      {% for project in site.data.projects %}
+        <div class="col-md-6 col-xl-3">
+          <div class="card mb-4">
+            <div class="card-body">
+              <img class="card-img-top mb-4 rounded" src="{{project.image}}">
+              <h5 class="card-title text-primary">{{project.title}}</h5>
+              <p class="card-text pb-3">{{project.description}}</p>
+              <a href="{{project.link}}" class="btn btn-outline-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

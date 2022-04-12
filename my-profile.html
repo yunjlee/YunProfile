@@ -1,0 +1,161 @@
+---
+layout: default
+title: "My Profile - Dashboard Template"
+
+parent: "my-profile"
+sub_parent: ""
+activePage: "my-profile"
+plugins: [date_range_picker]
+---
+<div class="bg-white border rounded">
+  <div class="row no-gutters">
+    <div class="col-lg-4 col-xl-3">
+      <div class="profile-content-left profile-left-spacing pt-5 pb-3 px-3 px-xl-5">
+        <div class="card text-center widget-profile px-0 my-3 border-0">
+          <div class="card-img mx-auto rounded-circle">
+            <img class="w-100" src="{{site.data.profile.image}}" alt="user image">
+          </div>
+          <div class="card-body">
+            <h4 class="py-2 text-dark">{{site.data.profile.name}}</h4>
+            <p>{{site.data.profile.email}}</p>
+            <p></p>
+          </div>
+          <div class="btn-group w-100" role="group" aria-label="resume">
+            {% for resume in site.data.profile.resumes %}
+              {% if resume.link != '' %}
+                <a href="{{resume.link}}" target="_blank" class="btn btn-success">{{resume.label}}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="d-flex justify-content-between ">
+          <div class="text-center pb-4">
+            <h6 class="text-dark pb-2">1503</h6>
+            <p>Friends</p>
+          </div>
+          <div class="text-center pb-4">
+            <h6 class="text-dark pb-2">2905</h6>
+            <p>Followers</p>
+          </div>
+          <div class="text-center pb-4">
+            <h6 class="text-dark pb-2">1200</h6>
+            <p>Following</p>
+          </div>
+        </div>
+        <hr class="w-100">
+        <div class="contact-info pt-4">
+          <h5 class="text-dark mb-1">Contact Information</h5>
+          <p class="text-dark font-weight-medium pt-4 mb-2">Email address</p>
+          <p>{{site.data.profile.email}}</p>
+          <p class="text-dark font-weight-medium pt-4 mb-2">Phone Number</p>
+          <p>{{site.data.profile.phone}}</p>
+          <p class="text-dark font-weight-medium pt-4 mb-2">Birthday</p>
+          <p>{{site.data.profile.birth}}</p>
+          <p class="text-dark font-weight-medium pt-4 mb-2">Social Profile</p>
+          <p class="pb-3 social-button">
+            {% for social in site.data.profile.socials %}
+              {% if social.link != "" %}
+                <a href="{{social.link}}" class="mb-1 btn btn-outline {{social.class}} rounded-circle">
+                  <i class="mdi {{social.icon}}"></i>
+                </a>
+              {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 col-xl-9">
+      <div class="profile-content-right profile-right-spacing py-5">
+        <ul class="nav nav-tabs px-3 px-xl-5 nav-style-border" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="true">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+          </li>
+        </ul>
+        <div class="tab-content px-3 px-xl-5" id="myTabContent">
+          <div class="tab-pane fade show active" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+            <div class="card-body">
+              <div class="row">
+                {% for project in site.data.projects %}
+                  <div class="col-md-6 col-xl-4">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <img class="card-img-top mb-4 rounded" src="{{project.image}}">
+                        <h5 class="card-title text-primary">{{project.title}}</h5>
+                        <p class="card-text pb-3">{{project.description}}</p>
+                        <a href="{{project.link}}" target="_blank" class="btn btn-outline-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <form id="contact-form" method="post" role="form">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row my-5">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_name">Firstname *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname">Lastname *</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_need">Please specify your need *</label>
+                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                          <option value=""></option>
+                          <option value="Request quotation">Request quotation</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *&#13;&#10;Use formspree: https://formspree.io" rows="8" required="required" data-error="Please, leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-muted">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="{% if page.rtl %}rtl{% else %}ltr{% endif %}">
+  {% include base/head.html %}
+  <body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+    <script>
+      NProgress.configure({ showSpinner: false });
+      NProgress.start();
+    </script>
+
+    {% if page.activePage == 'index' %}
+      <div id="toaster"></div>
+    {% endif %}
+
+    <div class="wrapper">
+      {% include base/left-sidebar.html %}
+      <div class="page-wrapper">
+        {% include base/header.html %}
+        <div class="content-wrapper">
+          <div class="content">{{ content }}</div>
+
+          {% if page.activePage == 'right-sidebar' %}
+          {% include base/right-sidebar.html %}
+          {% endif %}
+
+          {% include base/right-sidebar-2.html %}
+        </div>
+        {% include base/footer.html %}
+      </div>
+    </div>
+    {% include base/scripts.html %}
+  </body>
+</html>

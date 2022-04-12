@@ -1,0 +1,45 @@
+<!-- Header -->
+<header class="main-header " id="header">
+  <nav class="navbar navbar-static-top navbar-expand-lg">
+    <!-- search form -->
+    <div class="search-form d-none d-lg-inline-block">
+      <div class="input-group">
+        <input type="text" class="form-control disabled" autocomplete="off" disabled />
+      </div>
+    </div>
+    <div class="navbar-right ">
+      <ul class="nav navbar-nav">
+        <!-- User Account -->
+        <li class="dropdown user-menu">
+          <button href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+            <img src="{{site.data.profile.image}}" class="user-image" alt="User Image" />
+            <span class="d-none d-lg-inline-block">{{site.data.profile.name}}</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <!-- User image -->
+            <li class="dropdown-header">
+              <img src="{{site.data.profile.image}}" class="img-circle" alt="User Image" />
+              <div class="d-inline-block">
+                Comedu School <small class="pt-1">{{site.data.profile.email}}</small>
+              </div>
+            </li>
+
+            <li>
+              <a href="my-profile.html">
+                <i class="mdi mdi-account"></i> My Profile
+              </a>
+            </li>
+            <li>
+              <a href="my-contact.html">
+                <i class="mdi mdi-email"></i> Contact
+              </a>
+            </li>
+            <li>
+              <a href="my-projects.html"> <i class="mdi mdi-diamond-stone"></i> Projects </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
