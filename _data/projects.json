@@ -26,8 +26,8 @@
     {
         "image": "assets/img/projects/project5.jpg",
         "title": "Word_Cloud",
-        "description": "Web_Crawling_News_Scraping",
-        "link": "#"
+        "description": "News_Scraping_Web_Crawling",
+        "link": "https://colab.research.google.com/drive/17te9IZXwy_WEh-e3M-Go0qTkMmYjY8AY?usp=sharing"
     },
     {
         "image": "assets/img/projects/project6.jpg",
