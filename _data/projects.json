@@ -19,9 +19,9 @@
     },
     {
         "image": "assets/img/projects/project4.jpg",
-        "title": "Title 4",
-        "description": "My Description 04",
-        "link": "#"
+        "title": "Deep_Learning_Model",
+        "description": "모델_생성_및_최적화_프로젝트",
+        "link": "https://colab.research.google.com/drive/1P7266Uzte3zH3KL_UYsa9esHT8-9OH30?usp=sharing"
     },
     {
         "image": "assets/img/projects/project5.jpg",
