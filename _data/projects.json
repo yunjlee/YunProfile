@@ -19,13 +19,13 @@
     },
     {
         "image": "assets/img/projects/project4.jpg",
-        "title": "Deep_Learning_Model",
-        "description": "모델_생성_및_최적화_프로젝트",
+        "title": "Cats_and_Dogs_Project",
+        "description": "Deep_Learning_Model_생성_및_최적화_프로젝트",
         "link": "https://colab.research.google.com/drive/1P7266Uzte3zH3KL_UYsa9esHT8-9OH30?usp=sharing"
     },
     {
         "image": "assets/img/projects/project5.jpg",
-        "title": "Words_Cloud",
+        "title": "Word_Cloud",
         "description": "Web_Crawling_News_Scraping",
         "link": "#"
     },
