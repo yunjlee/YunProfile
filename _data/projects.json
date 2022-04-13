@@ -13,26 +13,26 @@
     },
     {
         "image": "assets/img/projects/project3.jpg",
-        "title": "MoveNet Project",
-        "description": "DeepLearning_Project_Image_Video",
+        "title": "MoveNet_Project_Image_Video",
+        "description": "DeepLearning_Project",
         "link": "https://colab.research.google.com/drive/1vQsx_4DHC7bkbyPegtrqdFfVnbARGnvX?usp=sharing"
     },
     {
         "image": "assets/img/projects/project4.jpg",
-        "title": "My Title 04",
+        "title": "Title 4",
         "description": "My Description 04",
         "link": "#"
     },
     {
         "image": "assets/img/projects/project5.jpg",
-        "title": "My Title 05",
-        "description": "My Description 05",
+        "title": "Words_Cloud",
+        "description": "Web_Crawling_News_Scraping",
         "link": "#"
     },
     {
         "image": "assets/img/projects/project6.jpg",
-        "title": "Python_주차장 관리 프로그램",
-        "description": "주차장 관리 프로그램  (주차 정보 + 요금 계산)",
+        "title": "Python_주차장관리프로그램",
+        "description": "주차정보+요금계산_개인프로젝트",
         "link": "https://drive.google.com/file/d/1cWHp5TIndzAV_VlI05pRTByvJalNU03j/view?usp=sharing"
     }
 ]
