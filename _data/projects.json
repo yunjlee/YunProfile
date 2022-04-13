@@ -13,9 +13,9 @@
     },
     {
         "image": "assets/img/projects/project3.jpg",
-        "title": "My Title 03",
-        "description": "My Description 03",
-        "link": "#"
+        "title": "MoveNet Project",
+        "description": "DeepLearning_MoveNetProject_Image_Video",
+        "link": "https://colab.research.google.com/drive/1vQsx_4DHC7bkbyPegtrqdFfVnbARGnvX?usp=sharing"
     },
     {
         "image": "assets/img/projects/project4.jpg",
